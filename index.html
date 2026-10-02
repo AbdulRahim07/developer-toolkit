@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Developer Toolkit</h1>
+    <p class="subtitle">Simple browser-based utilities for everyday development.</p>
+
+    <section class="grid">
+      <article class="card">
+        <h2>JSON Formatter</h2>
+        <textarea id="jsonInput" placeholder='{"name":"Abdul","role":"developer"}'></textarea>
+        <button onclick="formatJSON()">Format JSON</button>
+        <pre id="jsonOutput"></pre>
+      </article>
+
+      <article class="card">
+        <h2>Base64</h2>
+        <textarea id="base64Input" placeholder="Enter text"></textarea>
+        <div class="row">
+          <button onclick="encodeBase64()">Encode</button>
+          <button onclick="decodeBase64()">Decode</button>
+        </div>
+        <pre id="base64Output"></pre>
+      </article>
+
+      <article class="card">
+        <h2>UUID Generator</h2>
+        <button onclick="generateUUID()">Generate UUID</button>
+        <pre id="uuidOutput"></pre>
+      </article>
+
+      <article class="card">
+        <h2>URL Encoder</h2>
+        <textarea id="urlInput" placeholder="https://example.com/?hello=world"></textarea>
+        <div class="row">
+          <button onclick="encodeURL()">Encode</button>
+          <button onclick="decodeURL()">Decode</button>
+        </div>
+        <pre id="urlOutput"></pre>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
